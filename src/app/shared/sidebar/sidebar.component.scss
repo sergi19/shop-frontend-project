@@ -1,0 +1,72 @@
+.sidebar {
+    position: relative;
+    display: grid;
+    grid-template-rows: 40% 60%; 
+    height: 100%;
+}
+
+.user-info {
+    position: relative;
+    overflow: hidden;
+}
+
+.user-info p {
+    color: rgb(29, 29, 58);
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.4s;
+    filter: blur(2px);
+    object-fit: cover;
+}
+
+.user-info:hover > .background-image {
+    transform: scale(1.5);
+}
+
+.small-image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu {  
+    position: relative;
+    background-color: rgb(29, 29, 58);
+    list-style: none;
+    line-height: 4.5em;
+    margin: 0;
+    padding-top: 10%;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu li {
+    padding-left: 10%;
+    margin-bottom: .1em;
+}
+
+.menu li:hover {
+    background-color:  rgb(101, 120, 126);
+}

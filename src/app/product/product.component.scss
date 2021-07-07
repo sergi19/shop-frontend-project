@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100%;
+    color: white;
+}
+
+.sidebar-container {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    overflow: hidden;
+}
+
+
+.content {
+    grid-row: 1;
+    grid-column: 3 / span 8;
+    overflow: overlay;
+}
+
+// .footer {
+//     border: 1px solid black;
+//     grid-column: span 10;
+//     background-color: rgb(21, 21, 58);;
+// }

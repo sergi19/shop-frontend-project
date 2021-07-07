@@ -1,0 +1,26 @@
+<div class="cartas-productos">
+  <div class="foto-tarjeta" [ngClass]="openDesc ? 'desaparecer-foto' : ''">
+      <img src="../../../assets/images/choclitos2.jpg" class="imagen-producto">
+  </div>
+
+  <div class="descripcion-producto" [ngClass]="openDesc ? 'aparecer-descripcion' : ''">
+       
+  </div>
+  <div class="texto-tarjeta" [ngClass]="openDesc ? 'empequeñecer-texto' : ''">
+      <div class="button-description" (click)="openDescription()" [ngClass]="openDesc ? 'elevar-boton' : ''">
+        <div *ngIf="!openDesc">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <div *ngIf="openDesc">
+          <i class="fas fa-arrow-down"></i>
+        </div>
+      </div>
+    <div class="precio" [ngClass]="openDesc ? 'desaparecer-precio' : ''">
+      <span>Producto</span>
+      <span>1500$</span>
+      <!-- <span>{{productInfo.name}}</span>
+      <span>{{productInfo.price}}$</span> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="products-container center-row">
+    <div *ngFor="let product of products; let i = index" class="product-card">
+        <div class="img-container" [ngClass]="product.open ? 'dwarf-img-container' : 'img-container'">
+            <img [src]="product.urlImg" class="product-img">
+        </div>
+        
+        <div class="product-description center-row" [ngClass]="product.open ? 'show-description' : ''">
+            <p class="paragraph-description center-row" [ngClass]="!product.open ? 'hide-paragraph-button' : ''">
+                {{product.description}}
+            </p>
+            <div class="shopping-cart-button center-row" [ngClass]="!product.open ? 'hide-paragraph-button' : ''">
+                <button class="center-row">Add to car</button>
+            </div>
+        </div>
+        <div class="card-text" [ngClass]="product.open ? 'dwarf-text' : ''">
+            <div class="button-description" (click)="openDescription(product)" [ngClass]="product.open ? 'raise-button' : ''">
+                <div *ngIf="!product.open">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+        
+                <div *ngIf="product.open">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="price">
+                <span>{{product.name}}</span>
+                <span>{{product.price}}$</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="sidebar">
+    <div *ngIf="user" class="user-info center-column">
+        <img [src]="user.img" class="background-image">
+        <div class="small-image">
+            <img [src]="user.img">
+        </div>
+        <br>
+        <p>{{user.name}}</p>
+    </div>
+    <div class="menu">
+        <li><a routerLink = "/">Dashboard</a></li>
+        <li><a routerLink = "/product-registry">Producto</a></li>
+        <li><a routerLink = "/product-list">Inventario</a></li>
+        <li><a routerLink = "/product-list">Facturas</a></li>
+        <li><a routerLink = "" (click)="signOut()">Cerrar sesión</a></li>
+    </div>
+</div>

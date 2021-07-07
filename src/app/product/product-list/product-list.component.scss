@@ -1,0 +1,146 @@
+.products-container {
+	position: relative;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-top: 1em;
+	font-family: 'Dosis', sans-serif;
+}
+
+.product-card {
+	position: relative;
+	width: 22%;
+	height: 30em;
+	margin: 1em;
+	box-shadow: 0px 0px 20px gray;
+	border-radius: 12px;
+  	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.product-img {
+	position: relative;
+	width: 99%;
+	transition: 0.4s;
+}
+
+.product-description {
+	position: relative;
+	width: 100%;
+	height: 0%;
+	background: #ffcdd2;
+	flex-direction: column;
+	overflow: hidden;
+	transition: 0.4s;
+}
+
+.paragraph-description {
+	width: 80%;
+	height: 82%;
+	font-size: 13px;
+	color: #c62828;
+	margin-top: 15px;
+	overflow-y: auto;
+	font-size: 15px;
+	font-weight: 600;
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.shopping-cart-button {
+	width: 80%;
+	height: 18%;
+	opacity: 1;
+	transition: 1s;
+
+	button {
+		width: 50%;
+		height: 45%;
+		background-color: #c62828;
+		color: white;
+		border: none;
+		border-radius: .3em;
+	}
+}
+
+.hide-paragraph-button {
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.card-text {
+	position: relative;
+	width: 100%;
+	height: 15%;
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.4s;
+	box-sizing: border-box;
+}
+
+.button-description {
+	position: absolute;
+	width: 8%;
+	height: 45%;
+	background: #c62828;
+    border-radius: 50%;
+    top: -22%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 20px;
+    transition: 0.4s;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.price {
+	width: 100%;
+	height: 100%; 
+	transition: 0.4s;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	background-color: #c62828;
+	font-size: 17.5px;
+}
+
+/*effects*/
+.show-description {
+	height: 100%;
+}
+
+.dwarf-text {
+	height: 25%;
+}
+
+.dwarf-img-container {
+	height: 30%;
+
+	img {
+		width: 50%;
+		transition: 0.4s;
+	}
+}
+
+.raise-button {
+	top: -420%;
+	width: 8%;
+	height: 35%;
+}
